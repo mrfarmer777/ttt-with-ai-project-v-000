@@ -15,7 +15,7 @@ class Game
     [6,4,2]
   ]
 
-  def initialize(player_1=Players::Human.new,player_2=Players::Human.new,board)
+  def initialize(player_1=Players::Human.new("X"),player_2=Players::Human.new("O"),board)
     #initialize will be called with 3 appropriate, pre-made objects
     @player_1=player_1
     @player_2=player_2
