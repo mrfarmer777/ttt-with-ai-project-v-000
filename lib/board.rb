@@ -39,16 +39,4 @@ class Board
     @cells[pos]=player.token
   end
 
-
-
-
-  end
-
-
-
-
-
-
-
-
 end
