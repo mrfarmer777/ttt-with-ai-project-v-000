@@ -34,12 +34,17 @@ class Board
   def valid_move?(pos)
     (pos.between?(0,10) && !taken?(pos))
   end
-      
+
+  def update(pos,player)
+    @cells[pos]=player.token
+  end
+    
+
 
 
   end
 
-  
+
 
 
 
