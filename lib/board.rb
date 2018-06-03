@@ -36,6 +36,7 @@ class Board
       true
     else
       false
+    end
   end
 
   def update(pos,player)
