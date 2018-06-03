@@ -22,4 +22,8 @@ class Game
     @board=board
 
   end
+
+  def board
+    @board
+  end
 end
