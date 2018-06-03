@@ -34,4 +34,9 @@ class Game
       @player_2
     end
   end
+
+  def won?
+    WIN_COMBINATIONS.any? {|combo| @board[combo[0]]==@board[combo[1]] && @board[combo[1]]==@board[combo[2]]}
+  end
+    
 end
