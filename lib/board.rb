@@ -36,7 +36,7 @@ class Board
   end
 
   def update(pos,player)
-    @cells[pos]=player.token
+    @cells[pos.to_i]=player.token
   end
 
 end
