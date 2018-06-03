@@ -25,4 +25,13 @@ class Game
   def board
     @board
   end
+
+  def current_player
+    turns=@board.turn_count
+    if turns%2==0
+      @player_1
+    else
+      @player_2
+    end
+  end
 end
