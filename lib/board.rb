@@ -32,7 +32,6 @@ class Board
   end
 
   def valid_move?(pos)
-    binding.pry
     if pos.to_i.between?(0,10) && !taken?(pos.to_i)
       true
     else
