@@ -14,5 +14,11 @@ class Game
     [0,4,8],
     [6,4,2]
   ]
-  
-  def initialize()
+
+  def initialize(player_1,player_2,board)
+    #initialize will be called with 3 appropriate, pre-made objects
+    @player_1=player_1
+    @player_2=player_2
+    @board=board
+
+  end
