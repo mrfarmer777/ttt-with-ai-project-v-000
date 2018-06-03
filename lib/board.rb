@@ -24,7 +24,7 @@ class Board
   end
 
   def position(pos)
-    @cells[pos]
+    @cells[pos.to_i]
   end
 
   def taken?(pos)
