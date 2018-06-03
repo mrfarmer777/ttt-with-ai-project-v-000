@@ -10,7 +10,7 @@ class Board
   end
 
   def display
-    puts "#{@cells[0]} | #{@cells[1]} | #{@cells[2]} \n-----------#{@cells[3]} | #{@cells[4]} | #{@cells[5]}\n-----------#{@cells[6]} | #{@cells[7]} | #{@cells[8]}"
+    puts "#{@cells[0]} | #{@cells[1]} | #{@cells[2]} \n-----------\n#{@cells[3]} | #{@cells[4]} | #{@cells[5]}\n-----------\n#{@cells[6]} | #{@cells[7]} | #{@cells[8]}"
   end
 
   def full?
