@@ -31,6 +31,15 @@ class Board
     @cells[pos]==" "? false : true
   end
 
+  def valid_move?(pos)
+    (pos.between?(0,10) && !taken?(pos))
+  end
+      
+
+
+  end
+
+  
 
 
 
