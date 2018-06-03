@@ -23,8 +23,12 @@ class Board
     @cells.count {|cell| cell=="X" || cell=="O"}
   end
 
-  def position(inp)
-    @cells[inp]
+  def position(pos)
+    @cells[pos]
+  end
+
+  def taken?(pos)
+    @cells[pos]==" "? false : true
   end
 
 
