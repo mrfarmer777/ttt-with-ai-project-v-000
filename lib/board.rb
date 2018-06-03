@@ -32,7 +32,7 @@ class Board
   end
 
   def valid_move?(pos)
-    pos.to_i.between?(0,10) && taken?(pos.to_i-1)==false
+    pos.to_i.between?(0,10) && taken?(pos)==false
   end
 
   def update(pos,player)
