@@ -31,7 +31,7 @@ class Board
     @cells[pos.to_i-1]==" "? false : true
   end
 
-  def valid_move?(pos)  
+  def valid_move?(pos)
     pos.to_i.between?(0,10) && !taken?(pos.to_i)
   end
 
