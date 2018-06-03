@@ -28,15 +28,15 @@ class Board
   end
 
   def taken?(pos)
-    @cells[pos.to_i]==" "? false : true
+    @cells[pos.to_i-1]==" "? false : true
   end
 
   def valid_move?(pos)
-    (pos.to_i.between?(0,10) && !taken?(pos.to_i))
+    (pos.to_i.between?(0,10) && !taken?(pos.to_i-1))
   end
 
   def update(pos,player)
-    @cells[pos.to_i]=player.token
+    @cells[pos.to_i-1]=player.token
   end
 
 end
